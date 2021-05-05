@@ -20,7 +20,7 @@ def convert(filename):
         temp.loc[i] = data
 
     # Get new path
-    file= filename.split('/')[-1][:-3]
+    file = filename.split('/')[-1][:-3]
     new_path = "Parsed/" + file + 'csv'
     # Save to new path
     temp.to_csv(new_path)
